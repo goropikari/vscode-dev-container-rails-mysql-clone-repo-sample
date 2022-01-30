@@ -2,19 +2,15 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.209.6/containers/ruby
 {
 	"name": "Ruby",
-	// "build": {
-	// 	"dockerfile": "Dockerfile",
-	// 	"args": {
-	// 		// Update 'VARIANT' to pick a Ruby version: 3, 3.0, 2, 2.7, 2.6
-	// 		// Append -bullseye or -buster to pin to an OS version.
-	// 		// Use -bullseye variants on local on arm64/Apple Silicon.
-	// 		"VARIANT": "3.0-buster",
-	// 		// Options
-	// 		"NODE_VERSION": "16"
-	// 	}
-	// },
+
+	// For clone repository
 	"dockerComposeFile": "docker-compose.yml",
 	"workspaceFolder": "/workspace/vscode-dev-container-rails-mysql-clone-repo-sample",
+
+	// bind mount local files
+	// "dockerComposeFile": ["docker-compose.yml", "docker-compose-local.yml"],
+	// "workspaceFolder": "/workspace",
+
 	"service": "web",
 
 	// Set *default* container specific settings.json values on container create.
